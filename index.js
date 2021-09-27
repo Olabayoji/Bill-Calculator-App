@@ -95,7 +95,7 @@ function myFunction(){
 }
 
 function calculator(bill, myPercent, people){
-    var tip = ((myPercent / 100) * bill).toFixed(2);
+    var tip = (((myPercent / 100) * bill)/people).toFixed(2);
     var totalTip = ((bill / people) + Number(tip)).toFixed(2) ;
     return [tip, totalTip];
 }
